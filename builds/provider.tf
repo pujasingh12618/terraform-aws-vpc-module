@@ -8,7 +8,7 @@ provider "aws" {
       "evtech:program"            = "cloudops"
       "evtech:provisioned-by"     = local.provisioned_by_tag
       "evtech:longterm"           = "forever"
-      "evtech:commit-hash"        = var.commit_hash
+      "evtech:commit-hash"        = "commit_hash"
       "evtech:vpc-module-version" = replace(local.vpc_module_version, "?", "")
       "evtech:test-build"         = true
     }
